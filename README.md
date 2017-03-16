@@ -1,2 +1,2 @@
-cd to /directory with project
-node index
+# cd  /directory with project 
+# /directory with project/ node index
