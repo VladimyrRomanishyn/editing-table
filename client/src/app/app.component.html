@@ -1,0 +1,18 @@
+<!------------------------------------------------------------------------>
+ <table class="table table-bordered" (click)='focus($event)' (dblclick)='modify($event)'>
+  <thead>
+    <tr>
+      <th *ngFor='let item of tableConf' [attr.header]='item.toLowerCase()' [attr.data-item]='item'>{{item.toUpperCase()}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let item of data'>
+      <td class='identificator'>{{item.id}}</td>
+      <td [attr.name]='item.id'>{{item.firstName}}</td>
+      <td [attr.name]='item.id+steps'>{{item.lastName}}</td>
+      <td [attr.name]='item.id+steps*2'>{{item.userName}}</td>
+    </tr>
+
+  </tbody>
+</table>
+<!------------------------------------------------------------------------>
